@@ -58,7 +58,7 @@ body{
     color:rgb(44, 171, 175);
 }
 .seen>.text2{
-    font-size:17px;
+    
 }
 .imgs{
     /*画像二枚横並び*/
@@ -89,7 +89,7 @@ body{
     color:rgb(44, 171, 175)
 }
 .price>.text2{
-    font-size:17px;
+   
 }
 .price>.text3{
     text-align:center;
@@ -162,6 +162,7 @@ body{
     .seen>.text2{
         padding-top:4%;
         width:56%;
+        font-size:17px;
     }
     .sweet{
         font-size:30px;
@@ -237,14 +238,14 @@ body{
     /*SP専用項目*/
     .palm>.palmtext1{
         top:30%;
-        font-size: 30px;
+        font-size: 20px;
     }
     .palm>.palmtext2{
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 25px;
     }
     .small{
-        font-size:20px;
+        font-size:10px;
     }
     .room{
         width:90%;
@@ -268,6 +269,7 @@ body{
     .seen>.text2{
         order:3;
         width:90%;
+        font-size:15px;
         margin:0 auto 2% auto;
         text-align:center;
     }
@@ -299,6 +301,7 @@ body{
         width:90%;
         text-align:center;
         margin:0 auto;
+        font-size:15px;
     }
     .price>.text3{
         order:4;
