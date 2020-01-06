@@ -117,7 +117,6 @@ body{
     background-color:rgb(145, 117, 94);
     color:black;
     text-align:center;
-    font-size:30px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -231,6 +230,7 @@ body{
         left:52%;
         width:48%;
         padding:5px 0;
+        font-size:30px;
     }
 }
 
@@ -245,7 +245,7 @@ body{
         line-height: 25px;
     }
     .small{
-        font-size:10px;
+        font-size:15px;
     }
     .room{
         width:90%;
@@ -340,5 +340,6 @@ body{
         width:95%;
         margin-left:2.5%;
         margin-top:3%;
+        font-size:25px;
     }
 }
