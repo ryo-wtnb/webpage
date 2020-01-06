@@ -18,7 +18,7 @@ body{
     position: absolute;
     right:0;
     left:0;
-    margin: 0 auto;
+    margin:0 auto;
     color:white;
     
 }
@@ -27,7 +27,7 @@ body{
     bottom:0;
     right:0;
     left:0;
-    margin: 7px auto;
+    margin: 0 auto;
     background:rgba(255,255,255,0.4);
     font-weight: bold;
     color:rgb(48, 27, 9);
