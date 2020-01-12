@@ -50,14 +50,13 @@ body{
 }
 .seen{
     /*3段目景色 */
-    display:flex;
 }
-.seen>.text1{
+.seen>.row>.text1{
     text-align:center;
     background-color:rgb(214, 214, 214);
     color:rgb(44, 171, 175);
 }
-.seen>.text2{
+.seen>.row>.text2{
     
 }
 .imgs{
@@ -81,38 +80,34 @@ body{
 }
 .price{
     /*値段表示部分*/
-    display:flex;
 }
-.price>.text1{
+.price>.row>.text1{
     text-align:center;
     background-color:rgb(214, 214, 214);
     color:rgb(44, 171, 175)
 }
-.price>.text2{
+.price>.row>.text2{
    
 }
-.price>.text3{
+.price>.row>.text3{
     text-align:center;
     font-weight:bold;
     text-align:center;
     font-size:20px;
-    font-weight:bold;
 }
 .big{
     font-size:25px;
 }
 .booking{
-    display:flex;
 }
-.booking>.text{
+.booking>.row>.text{
 }
-.booking>img{
-
+.booking>.row>img{
 }
-.booking>.text>.text1{
+.booking>.row>.text>.text1{
     font-size:15px;
 }
-.booking>.text>a{
+.booking>.row>.text>a{
     border:solid 1px;
     background-color:rgb(145, 117, 94);
     color:black;
@@ -140,28 +135,29 @@ body{
         font-size:30px;
     }
     .seen{
-        width:80%;
         margin:8% auto;
-        flex-flow:column wrap;
-        max-height:280px;
     }
-    .seen>img{
-        margin-right:4%;
+    .seen>.row{
+        max-height:320px;
+    }
+    .seen>.row>img{
         width:40%;
-        height:100%;
-        align-self: stretch;
-        
+        max-height:100%;
     }
-    .seen>.text1{
+    .seen>.row>.text1{
+        width:40%;
         font-size:25px;
         height:35px;
-        width:56%;
-        align-self:flex-start;
+        margin-right:5%;
     }
-    .seen>.text2{
+    .seen>.row>.text2{
         padding-top:4%;
-        width:56%;
+        width:38%;
         font-size:17px;
+        margin-right:5%;
+    }
+    .imgs{
+        margin-top:10%;
     }
     .sweet{
         font-size:30px;
@@ -174,61 +170,48 @@ body{
         font-size:15px;
         white-space: nowrap;
     }
-    .price{
-        display:flex;
-        flex-flow:column wrap;
-        width:80%;
+    .price>.row{
         margin:4% auto;
         max-height:400px;
     }
-    .price>.text1{
-        width:55%;
-        height:40px;
+    .price>.row>.text1{
         text-align:center;
         font-size:25px;
+        margin-left:5%;
         
     }
-    .price>.text2{
+    .price>.row>.text2{
         padding-top:3%;
-        width:50%;
         font-size:17px;
-        margin-left:2.5%;
+        margin-left:5%;
         
     }
-    .price>.text3{
-        width:50%;
-        margin-left:2.5%;
+    .price>.row>.text3{
+        margin-left:5%;
         margin-top:15%;
     }
     .price>img{
-        width:42%;
         margin-left:3%;
     }
-    .booking{
-        width:80%;
-        display:flex;
+    .booking>.row{
         margin:5% auto;
         position:relative;
     }
-    .booking>.text{
-        width:100%;
+    .booking>.row>.text{
     }
-    .booking>img{
-        width:45%;
+    .booking>.row>img{
         margin-right:5%;
+        margin-left:5%;
     }
-    .booking>.text>.text1{
-        width:96%;
+    .booking>.row>.text>.text1{
         margin-top:15%;
-        margin-left:4%;
         font-size:15px;
     }
-    .booking>.text>a{
+    .booking>.row>.text>a{
         position:absolute;
         bottom:0;
         right:0;
-        left:52%;
-        width:48%;
+        width:100%;
         padding:5px 0;
         font-size:30px;
     }
@@ -252,23 +235,16 @@ body{
         font-size:20px;
     }
     .seen{
-        width:95%;
-        margin:5% auto;
-        flex-direction: column;
-    }
-    .seen>img{
-        order:2;
-        width:80%;
         margin:5% auto;
     }
-    .seen>.text1{
-        order:1;
+    .seen>.row>img{
+        margin:5% auto;
+    }
+    .seen>.row>.text1{
         font-size:20px;
-        width:100%;
+        margin:0 auto;
     }
-    .seen>.text2{
-        order:3;
-        width:90%;
+    .seen>.row>.text2{
         font-size:15px;
         margin:0 auto 2% auto;
         text-align:center;
@@ -285,61 +261,43 @@ body{
         font-size:15px;
         margin:0 auto;
     }
-    .price{
-        display:flex;
-        width:95%;
+    .price>.row{
         margin:4% auto 0 auto;
-        flex-direction: column;
     }
-    .price>.text1{
-        order:1;
-        width:100%;
+    .price>.row>.text1{
         font-size:20px;
     }
-    .price>.text2{
-        order:3;
-        width:90%;
+    .price>.row>.text2{
         text-align:center;
         margin:0 auto;
         font-size:15px;
     }
-    .price>.text3{
-        order:4;
-        width:100%;
+    .price>.row>.text3{
         text-align:center;
         font-size:20px;
         font-weight:bold;
         margin:2% auto;
     }
-    .price>img{
-        order:2;
-        width:80%;
+    .price>.row>img{
         margin:4% auto;
     }
     .booking{
-        width:100%;
-        display:flex;
-        flex-flow: column wrap;
         
     }
     .booking>.text{
-        width:100%;
         
     }
-    .booking>img{
-        width:80%;
+    .booking>.row>img{
         margin:3% auto;
     }
-    .booking>.text>.text1{
-        width:80%;
+    .booking>.row>.text>.text1{
         font-size:15px;
-        margin:2% auto;
+        margin-left:13%;
     }
-    .booking>.text>a{
+    .booking>.row>.text>a{
         display:inline-block;
-        width:95%;
-        margin-left:2.5%;
-        margin-top:3%;
+        width:100%;
         font-size:25px;
+        margin:5% 0 0 0;
     }
 }
